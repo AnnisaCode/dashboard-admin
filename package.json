@@ -2,7 +2,7 @@
   "name": "admin-dashboard",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://annisacode.github.io/react-dashboard-admin/",
+  "homepage": "https://annisacode.github.io/dashboard-admin/",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.7.2",
     "bootstrap": "^5.3.3",
