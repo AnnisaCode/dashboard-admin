@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Button, Form, Container, Alert } from 'react-bootstrap';
 import { signInWithEmailAndPassword, createUserWithEmailAndPassword } from 'firebase/auth';
-import { auth } from '../firebaseConfig'; // Perhatikan jalur relatif
+import { auth } from '../firebaseConfig';
 import ToastNotification, { showToast } from './ToastNotification';
 
 const Login = ({ setUser }) => {
@@ -31,6 +31,7 @@ const Login = ({ setUser }) => {
             setUser(userCredential.user);
             showToast('Registration successful!', 'success');
         } catch (error) {
+            console.log('Error:', error);
             setError(error.message);
             showToast('Registration failed. Please try again.', 'error');
         }
